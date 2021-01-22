@@ -444,10 +444,6 @@ header .container_bottom .cost {
 }
 
 @media screen and (max-width: 740px) {
-  .sale_section .main__content {
-    width: 70%;
-  }
-
   .sale_section .main__content .main__content_photos .secondary_photos {
     display: none;
   }
