@@ -195,6 +195,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -349,8 +352,21 @@ header {
 }
 
 .section_repeat {
-  margin-left: 185px;
+  margin: 0 50px;
   padding-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section_repeat .section_desc {
+  margin-right: 100px;
 }
 
 .section_repeat .container {
@@ -610,9 +626,9 @@ footer .container_bottom .links__item ul li:hover {
 }
 
 @media screen and (max-width: 1360px) {
-  .section_repeat {
-    margin-left: 0;
-    padding-bottom: 0;
+  .section_repeat img {
+    width: 50%;
+    display: inline-block;
   }
 }
 
@@ -635,6 +651,11 @@ footer .container_bottom .links__item ul li:hover {
     padding-bottom: 100px;
   }
 
+  .section_repeat {
+    margin: 0 0 0 50px;
+    padding-bottom: 0;
+  }
+
   .section_repeat .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -648,7 +669,7 @@ footer .container_bottom .links__item ul li:hover {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0;
-    margin: 170px 0;
+    margin: 80px 0 100px;
   }
 
   .section_repeat .main_photo {
@@ -843,6 +864,12 @@ footer .container_bottom .links__item ul li:hover {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .section_repeat .section_desc {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .place_section .houses__item {
     width: 90%;
@@ -870,5 +897,15 @@ footer .container_bottom .links__item ul li:hover {
 
   .socials a + a {
     margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section_repeat {
+    margin-left: 10px;
+  }
+
+  .section_repeat .section_desc {
+    margin-right: 10px;
   }
 }
